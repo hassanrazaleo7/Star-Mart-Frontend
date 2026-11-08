@@ -4,8 +4,13 @@ import './globals.css';
 import '../styles.css';
 
 export const metadata = {
-  title: 'Shopery — Fresh groceries, delivered',
-  description: 'Fresh groceries and everyday essentials, delivered with care.',
+  title: 'Star Mart — Fresh groceries, delivered',
+  description: 'Star Mart groceries and everyday essentials, delivered with care.',
+  icons: {
+    icon: '/star-mart.svg',
+    shortcut: '/star-mart.svg',
+    apple: '/star-mart.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
