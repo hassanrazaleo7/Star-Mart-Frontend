@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <AuthProvider>{children}</AuthProvider>
+        <Script src="/storefront-navigation.js" strategy="beforeInteractive" />
         <Script src="/storefront.js" strategy="afterInteractive" />
       </body>
     </html>
