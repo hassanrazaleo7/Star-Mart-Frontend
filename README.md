@@ -21,7 +21,7 @@ Sign-in and registration use Auth.js Credentials with the existing `public.custo
 
 Active products, categories, prices, stock, and currency are read from the shared `star_mart` database. The cart and wishlist are stored in the browser; checkout revalidates current product prices and stock on the server before creating Admin-visible orders and updating inventory. Checkout currently supports delivery or store pickup with cash on delivery. Authenticated customers can view their order history and order details from the dashboard.
 
-Internal storefront links use client-side navigation so moving between pages does not reload the app or restart the catalog request. Catalog responses are cached by the browser and shared cache for up to 60 seconds.
+Internal storefront links use client-side navigation so moving between pages does not reload the app or restart the catalog request. The home hero appears while the product catalog is loading, and its banner image is reused across navigation. Catalog responses are cached by the browser and shared cache for up to 60 seconds.
 
 The customer profile photo and non-account profile preferences remain browser-local. The vendor inquiry form is still a frontend demo, and online payment processing is not configured. Product photography is loaded from product records when available, and Poppins is loaded from Google Fonts.
 
